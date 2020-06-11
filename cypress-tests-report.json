@@ -1,0 +1,353 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 10,
+    "passes": 10,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-06-11T10:32:53.423Z",
+    "end": "2020-06-11T10:32:53.423Z",
+    "duration": 6178,
+    "testsRegistered": 10,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1ccf945b-e1d0-41cf-8662-5b0647eeef59",
+      "title": "",
+      "fullFile": "cypress/integration/e2e_tests/navbar.spec.js",
+      "file": "cypress/integration/e2e_tests/navbar.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ba953631-23a1-41e8-ad14-9bfa38b865c0",
+          "title": "Navbar Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should show correct number of navBar links",
+              "fullTitle": "Navbar Test should show correct number of navBar links",
+              "timedOut": null,
+              "duration": 1160,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#pages-nav li').should('have.length', 3);",
+              "err": {},
+              "uuid": "6e2bc962-d886-46b5-a3dc-12a5a0bbaa56",
+              "parentUUID": "ba953631-23a1-41e8-ad14-9bfa38b865c0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should display online banking content",
+              "fullTitle": "Navbar Test should display online banking content",
+              "timedOut": null,
+              "duration": 902,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('Online Banking').click();\ncy.url().should('include', 'online-banking.html');\ncy.get('#onlineBankingMenu').should('be.visible');\ncy.get('#onlineBankingMenu').should('contain.text', 'Online Banking');\ncy.get(\"#onlineBankingMenu[class='active']\").should('be.visible');",
+              "err": {},
+              "uuid": "30d06a88-3cd6-48cf-83c6-4fc4f1a746eb",
+              "parentUUID": "ba953631-23a1-41e8-ad14-9bfa38b865c0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should display feedback content",
+              "fullTitle": "Navbar Test should display feedback content",
+              "timedOut": null,
+              "duration": 454,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('Feedback').click();\ncy.url().should('include', 'feedback.html');\ncy.get('#feedback-title').should('be.visible');\ncy.get('#feedback-title').should('contain.text', 'Feedback');",
+              "err": {},
+              "uuid": "c85cdb04-ad27-46aa-9777-cf0303b37fbb",
+              "parentUUID": "ba953631-23a1-41e8-ad14-9bfa38b865c0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should display homepage content",
+              "fullTitle": "Navbar Test should display homepage content",
+              "timedOut": null,
+              "duration": 253,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('Zero Bank').click();\ncy.url().should('include', 'index.html');\ncy.get(\"#homeMenu[class='active']\").should('be.visible');",
+              "err": {},
+              "uuid": "a60eae64-899c-4d5c-b9e7-466524ff224d",
+              "parentUUID": "ba953631-23a1-41e8-ad14-9bfa38b865c0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "6e2bc962-d886-46b5-a3dc-12a5a0bbaa56",
+            "30d06a88-3cd6-48cf-83c6-4fc4f1a746eb",
+            "c85cdb04-ad27-46aa-9777-cf0303b37fbb",
+            "a60eae64-899c-4d5c-b9e7-466524ff224d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2769,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "1c31cae2-b215-40d6-846c-48540a757c0d",
+      "title": "",
+      "fullFile": "cypress/integration/e2e_tests/password.spec.js",
+      "file": "cypress/integration/e2e_tests/password.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "dc3933aa-8681-47c6-9c35-7587ff005cff",
+          "title": "Password Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should click on the signin button",
+              "fullTitle": "Password Test should click on the signin button",
+              "timedOut": null,
+              "duration": 1230,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#signin_button').click();",
+              "err": {},
+              "uuid": "d11bd2fd-6e8b-421e-bdd1-6658df1c3586",
+              "parentUUID": "dc3933aa-8681-47c6-9c35-7587ff005cff",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should click on the forgotten password link",
+              "fullTitle": "Password Test should click on the forgotten password link",
+              "timedOut": null,
+              "duration": 219,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.offset3 > a').click();",
+              "err": {},
+              "uuid": "a2c170e9-b303-4664-8440-58d4fec1db92",
+              "parentUUID": "dc3933aa-8681-47c6-9c35-7587ff005cff",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should fill email form in",
+              "fullTitle": "Password Test should fill email form in",
+              "timedOut": null,
+              "duration": 447,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#user_email').type('randomemail@gmail.com');",
+              "err": {},
+              "uuid": "142f8783-144e-456a-8fa3-23038773fd1a",
+              "parentUUID": "dc3933aa-8681-47c6-9c35-7587ff005cff",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should submit the email with form",
+              "fullTitle": "Password Test should submit the email with form",
+              "timedOut": null,
+              "duration": 211,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[value=\"Send Password\"]').click(); // cy.contains(\"Send Password\").click();",
+              "err": {},
+              "uuid": "51aeaaf5-6fc5-4692-9e7d-d61300ad0ec8",
+              "parentUUID": "dc3933aa-8681-47c6-9c35-7587ff005cff",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d11bd2fd-6e8b-421e-bdd1-6658df1c3586",
+            "a2c170e9-b303-4664-8440-58d4fec1db92",
+            "142f8783-144e-456a-8fa3-23038773fd1a",
+            "51aeaaf5-6fc5-4692-9e7d-d61300ad0ec8"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2107,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "c549aba8-48cc-411b-966a-d7009178df24",
+      "title": "",
+      "fullFile": "cypress/integration/e2e_tests/search.spec.js",
+      "file": "cypress/integration/e2e_tests/search.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4cb67e14-1e79-472d-8ed5-91baf73bf456",
+          "title": "SearchBox Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should type into searchbox and submit with pressing enterr",
+              "fullTitle": "SearchBox Test should type into searchbox and submit with pressing enterr",
+              "timedOut": null,
+              "duration": 1269,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#searchTerm').type('Random Search {enter}');",
+              "err": {},
+              "uuid": "7def0bd1-5d29-4ab3-ad3f-49962cd7598c",
+              "parentUUID": "4cb67e14-1e79-472d-8ed5-91baf73bf456",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should show search results page",
+              "fullTitle": "SearchBox Test should show search results page",
+              "timedOut": null,
+              "duration": 33,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('h2').contains('Search Results:');",
+              "err": {},
+              "uuid": "30216f48-6d7d-4df1-906d-8b9e6c21fa53",
+              "parentUUID": "4cb67e14-1e79-472d-8ed5-91baf73bf456",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7def0bd1-5d29-4ab3-ad3f-49962cd7598c",
+            "30216f48-6d7d-4df1-906d-8b9e6c21fa53"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1302,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

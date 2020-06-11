@@ -1,0 +1,161 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-06-11T10:28:38.096Z",
+    "end": "2020-06-11T10:28:41.570Z",
+    "duration": 3474,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1c31cae2-b215-40d6-846c-48540a757c0d",
+      "title": "",
+      "fullFile": "cypress/integration/e2e_tests/password.spec.js",
+      "file": "cypress/integration/e2e_tests/password.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "dc3933aa-8681-47c6-9c35-7587ff005cff",
+          "title": "Password Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should click on the signin button",
+              "fullTitle": "Password Test should click on the signin button",
+              "timedOut": null,
+              "duration": 1230,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#signin_button').click();",
+              "err": {},
+              "uuid": "d11bd2fd-6e8b-421e-bdd1-6658df1c3586",
+              "parentUUID": "dc3933aa-8681-47c6-9c35-7587ff005cff",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should click on the forgotten password link",
+              "fullTitle": "Password Test should click on the forgotten password link",
+              "timedOut": null,
+              "duration": 219,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.offset3 > a').click();",
+              "err": {},
+              "uuid": "a2c170e9-b303-4664-8440-58d4fec1db92",
+              "parentUUID": "dc3933aa-8681-47c6-9c35-7587ff005cff",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should fill email form in",
+              "fullTitle": "Password Test should fill email form in",
+              "timedOut": null,
+              "duration": 447,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#user_email').type('randomemail@gmail.com');",
+              "err": {},
+              "uuid": "142f8783-144e-456a-8fa3-23038773fd1a",
+              "parentUUID": "dc3933aa-8681-47c6-9c35-7587ff005cff",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should submit the email with form",
+              "fullTitle": "Password Test should submit the email with form",
+              "timedOut": null,
+              "duration": 211,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[value=\"Send Password\"]').click(); // cy.contains(\"Send Password\").click();",
+              "err": {},
+              "uuid": "51aeaaf5-6fc5-4692-9e7d-d61300ad0ec8",
+              "parentUUID": "dc3933aa-8681-47c6-9c35-7587ff005cff",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d11bd2fd-6e8b-421e-bdd1-6658df1c3586",
+            "a2c170e9-b303-4664-8440-58d4fec1db92",
+            "142f8783-144e-456a-8fa3-23038773fd1a",
+            "51aeaaf5-6fc5-4692-9e7d-d61300ad0ec8"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2107,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

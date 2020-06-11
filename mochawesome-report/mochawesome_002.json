@@ -1,0 +1,123 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-06-11T10:28:43.271Z",
+    "end": "2020-06-11T10:28:45.816Z",
+    "duration": 2545,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c549aba8-48cc-411b-966a-d7009178df24",
+      "title": "",
+      "fullFile": "cypress/integration/e2e_tests/search.spec.js",
+      "file": "cypress/integration/e2e_tests/search.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4cb67e14-1e79-472d-8ed5-91baf73bf456",
+          "title": "SearchBox Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should type into searchbox and submit with pressing enterr",
+              "fullTitle": "SearchBox Test should type into searchbox and submit with pressing enterr",
+              "timedOut": null,
+              "duration": 1269,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#searchTerm').type('Random Search {enter}');",
+              "err": {},
+              "uuid": "7def0bd1-5d29-4ab3-ad3f-49962cd7598c",
+              "parentUUID": "4cb67e14-1e79-472d-8ed5-91baf73bf456",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should show search results page",
+              "fullTitle": "SearchBox Test should show search results page",
+              "timedOut": null,
+              "duration": 33,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('h2').contains('Search Results:');",
+              "err": {},
+              "uuid": "30216f48-6d7d-4df1-906d-8b9e6c21fa53",
+              "parentUUID": "4cb67e14-1e79-472d-8ed5-91baf73bf456",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7def0bd1-5d29-4ab3-ad3f-49962cd7598c",
+            "30216f48-6d7d-4df1-906d-8b9e6c21fa53"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1302,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}
