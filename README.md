@@ -1,7 +1,5 @@
 # cypress-e2e
 
-# Cypress Testing Project
-
 ## Setup of cypress project
 
 * Create package.json `npm init -y`
