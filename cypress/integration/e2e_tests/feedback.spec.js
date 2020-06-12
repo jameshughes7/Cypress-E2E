@@ -11,14 +11,18 @@ describe('Feedback Test', () => {
     });
 
     it('should fill in feedback form ', () => {
-        cy.get('#name').clear();
-        cy.get('#name').type('James Hughes');
-        cy.get('#email').clear();
-        cy.get('#email').type('hugjimbo77@gmail.com');
-        cy.get('#subject').clear();
-        cy.get('#subject').type('English');
-        cy.get('#comment').clear();
-        cy.get('#comment').type('This is an outrageous comment!')
+        cy.get('#name')
+            .clear()
+            .type('James Hughes');
+        cy.get('#email')
+            .clear()
+            .type('hugjimbo77@gmail.com');
+        cy.get('#subject')
+            .clear()
+            .type('English');
+        cy.get('#comment')
+            .clear()
+            .type('This is an outrageous comment!')
     });
 
     it('should submit feedback form', () => {
