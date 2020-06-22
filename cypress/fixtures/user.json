@@ -1,4 +1,10 @@
 {
     "id": "username",
-    "pwd": "password"
+    "pwd": "password",
+    "address": {
+        "addressLine1": "Flat 1",
+        "addressLine2": "125 Trinity Road",
+        "city": "London",
+        "postcode": "SW177SQ"
+    }
 }

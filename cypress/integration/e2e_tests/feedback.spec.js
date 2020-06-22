@@ -3,6 +3,7 @@ describe('Feedback Test', () => {
         cy.visit('http://zero.webappsecurity.com/index.html');
         cy.get('#feedback').click();
         // cy.contains('Feedback').click();
+        // cy.get('#name').as('name');
     })
 
     it('should load feedback form', () => {
@@ -14,6 +15,7 @@ describe('Feedback Test', () => {
         cy.get('#name')
             .clear()
             .type('James Hughes');
+        // cy.get('@name').clear().type('hugjimbo77@gmail.com');
         cy.get('#email')
             .clear()
             .type('hugjimbo77@gmail.com');

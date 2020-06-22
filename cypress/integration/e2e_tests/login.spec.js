@@ -6,11 +6,7 @@ describe('Login/Logout Test', () => {
     })
 
     it('should try to login with invalid data', () => {
-        cy.get('#login_form').should('be.visible');
-        cy.get('#user_login').type('invalid username');
-        cy.get('#user_password').type('invalid password');
-        // cy.contain('Sign in').click();
-        cy.get('[value="Sign in"]').click();
+        cy.login("invalid username", "invalid password");
     });
 
     it('should display error message', () => {
@@ -22,11 +18,7 @@ describe('Login/Logout Test', () => {
         cy.fixture('user').then(user => {
             const username = user.id;
             const password = user.pwd;
-
-            cy.get('#user_login').type(username);
-            cy.get('#user_password').type(password);
-            cy.get('#user_remember_me').click();
-            cy.contains('Sign in').click();
+        cy.login(username, password);
         })
         cy.get('.nav.nav-tabs').should('be.visible');
     });
